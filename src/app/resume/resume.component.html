@@ -1,0 +1,234 @@
+<div class="container text-center my-5">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"><i class="arrow right"></i></div>
+                    <div class="btn-link">Work Experience</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;"><i class="arrow right"></i></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;"><i class="arrow down"></i></div>
+                    </div>
+                </button>
+
+                <div style="text-align: left;" class="p-3">
+                    <h2 class="mb-0">Protégé Trainee</h2>
+                    <h3 class="text-primary">Maybank</h3>
+                    <ul>
+                        <li>Initiated tendering processes, managing RFI, RFP, and RFQ.</li>
+                        <li>Monitored supply performance and conducted RFP reviews, bid evaluations, and simple tender auctions.</li>
+                        <li>Managed the procurement process, including sourcing, tendering, and contract management.</li>
+                        <li>Developed and maintained relationships with suppliers and internal stakeholders.</li>
+                        <li>Assisted in the development of procurement strategies and policies.</li>
+                        <li>Acquired and collated performance data, coordinating publication plans with Procurement Managers.</li>
+                        <li>Analyzed and categorized suppliers, advising on procurement strategies to optimize value.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;" class="p-3">
+                    <h2 class="mb-0">Part-Time Ambassador</h2>
+                    <h3 class="text-primary">KLCC Convention Centre</h3>
+                    <ul>
+                        <li>Assisted in food preparation and cooking under the guidance of the Head Chef.</li>
+                        <li>Ensured timely readiness of ingredients and maintained an organized kitchen.</li>
+                        <li>Upheld food safety and hygiene standards, contributing to high-quality food service.</li>
+                        <li>Collaborated with kitchen staff for efficient workflow and event support.</li>
+                        <li>Managed setup and replenishment of food stations during events.</li>
+                        <li>Provided excellent customer service and responded to guest needs promptly.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;" class="p-3">
+                    <h2 class="mb-0">IT Trainee</h2>
+                    <h3 class="text-primary">Hiro Food Packages Manufacturing Sdn Bhd</h3>
+                    <ul>
+                        <li>Assist in the seamless operation of IT systems and provide end-user support.</li>
+                        <li>Troubleshoot and resolve technical issues, both software and hardware related.</li>
+                        <li>Investigate, diagnose, and efficiently resolve computer software and hardware faults.</li>
+                        <li>Implement and maintain a systematic filing system to ensure document traceability.</li>
+                        <li>Maintain inventory of all equipment, software, and licenses.</li>
+                        <li>Maintain confidentiality of information.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isAcademicProjectOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Academic Project</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isAcademicProjectOpen" style="color: white;"><i class="arrow right"></i></div>
+                        <div *ngIf="isAcademicProjectOpen" style="color: white;"><i class="arrow down"></i></div>
+                    </div>
+                </button>
+
+                <div style="text-align: left;" class="p-3">
+                    <h2 class="mb-0">Final Year Project</h2>
+                    <ul class="p-3">
+                        <li>Developed the MyEV mobile app for locating Electric Vehicle (EV) chargers using Flutter and Firebase.</li>
+                        <li>Implemented a user-friendly interface for users to locate EV chargers and view charger details.</li>
+                        <li>Integrated Google Maps API to display the location of EV chargers.</li>
+                        <li>Developed a database to store EV charger information and user data.</li>
+                        <li>Implemented user authentication and authorization using Firebase Authentication.</li>
+                        <li>Developed a user-friendly interface for users to view their profile and update their information.</li>
+                        <li>Implemented a rating system for users to rate and review EV chargers.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;" class="p-3">
+                    <h2 class="mb-0">Mobile App Development</h2>
+                    <ul class="p-3">
+                        <li>Developed the Clinic Finder Mobile Application using Java.</li>
+                        <li>Implemented a user-friendly interface for users to search for clinics based on location and specialty.</li>
+                        <li>Developed the Recipe App Mobile Application using Kotlin</li>
+                        <li>Implemented a user-friendly interface for users to add their recipes.</li>
+                        <li>Developed the Task Manager Mobile Application using Kotlin</li>
+                        <li>Implemented a user-friendly interface for users to add, edit, and delete tasks.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;" class="p-3">
+                    <h2 class="mb-0">Web Application Development</h2>
+                    <ul class="p-3">
+                        <li>Established a web application for Zada Cafe Restaurant using XAMPP.</li>
+                        <li>Developed a user-friendly interface for customers to view the menu and make reservation.</li>
+                        <li>Implemented a database to store customer information and reservation details.</li>
+                        <li>Designed the UI/UX design prototype for Zada Cafe Restaurant with Figma.</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;" class="p-3">
+                    <h2 class="mb-0">Database Development and Data Analysis</h2>
+                    <ul >
+                        <li>Constructed a Python-based database system for the analysis of Shooting Crime Reviews.</li>
+                        <li>Conducted data cleaning, transformation, and visualization for US Police Shooting data using Jupyterand Cloudera.</li>
+                        <li>Developed a comprehensive database management system using Oracle Apex for a Database Management Project.</li>
+                    </ul>
+                </div>
+
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;"><i class="arrow right"></i></div>
+                        <div *ngIf="isEducationOpen" style="color: white;"><i class="arrow down"></i></div>
+                    </div>
+                </button>
+                <div style="text-align: left;" class="p-3">
+                    <h2 class="mb-0">Bachelor of Information Technology with Honours</h2>
+                    <h3 class="text-primary">Universiti Teknologi MARA (UiTM)</h3>
+                    <ul>
+                        <li>Graduated from Universiti Teknologi MARA (UiTM) in January 2024</li>
+                        <li>Graduated with a CGPA 3.57</li>
+                        <li>Major in Information Technology</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;" class="p-3">
+                    <h2 class="mb-0">Matriculation in Module 1 (Pure Science)</h2>
+                    <h3 class="text-primary">Kolej Matrikulasi Pahang (KMPh)</h3>
+                    <ul>
+                        <li>Finished from Kolej Matrikulasi Pahang (KMPh) in May 2020</li>
+                        <li>Finished with a CGPA 3.37</li>
+                        <li>Participated in extracuricullar clubs such as the Adventure Club and Chemistry Mentorship Programme.</li>
+                    </ul>
+                </div>
+
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+            
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;"><i class="arrow right"></i></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;"><i class="arrow down"></i></div>
+                    </div>
+                </button>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div style="text-align: left;" class="p-3">
+                            <h3 class="mb-0">Programming Languages:</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>Kotlin</li>
+                                <li>Python</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                                <li>Dart</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="col">
+                        <div style="text-align: left;" class="p-3">
+                            <h3 class="mb-0">Frameworks:</h3>
+                            <ul>
+                                <li>Flutter</li>
+                                <li>Angular</li>
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Spring Boot</li>
+                                <li>Bootstrap</li>
+                                <li>Material UI</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="col">
+                        <div style="text-align: left;" class="p-3">
+                            <h3 class="mb-0">Database Management:</h3>
+                            <ul>
+                                <li>MySQL</li>
+                                <li>Oracle</li>
+                                <li>Firebase</li>
+                                <li>Cloudera</li>
+                                <li>Oracle Apex</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div style="text-align: left;" class="p-3">
+                            <h3 class="mb-0">Tools:</h3>
+                            <ul>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>Visual Studio Code</li>
+                                <li>Android Studio</li>
+                                <li>Cloudera</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div style="text-align: left;" class="p-3">
+                            <h3 class="mb-0">Soft Skills:</h3>
+                            <ul>
+                                <li>Communication</li>
+                                <li>Problem Solving</li>
+                                <li>Teamwork</li>
+                                <li>Time Management</li>
+                                <li>Leadership</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </accordion-group>
+            
+        </accordion>
+    </div>
+
+</div>

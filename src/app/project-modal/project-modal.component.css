@@ -1,0 +1,7 @@
+.carousel-image {
+    display: block;
+    width: 100%;
+    max-width: 275px;
+    height: auto;
+    margin: 0 auto;
+}

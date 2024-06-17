@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <!--About Me-->
+        <div class="col-lg shadow border m-1 rounded">
+            <div class="text-center p-3">
+                <h2 class="p-3">About Me</h2>
+                <img src="../../assets/profile_picture.jpg" alt="profile picture" width="256" height="256">
+                <p class="p-3" style="text-align: justify;">
+                    I am a recent graduate with a Bachelor of Information Technology (Hons.) from UiTM Shah Alam, 
+                    equipped with strong programming and database management skills. Known for my adaptability and 
+                    enthusiasm, I am eager to contribute to a dynamic team in the IT industry. I seek a challenging role 
+                    where I can leverage my expertise to drive success for innovative organizations and make a meaningful 
+                    impact in the ever-evolving field of information technology.
+                </p>
+            </div>
+        </div>
+        <!--Featured Project-->
+        <div class="col-lg shadow border m-1 rounded">
+            <div class="text-center p-3">
+                <h2>Featured Project</h2>
+                <h4>{{featuredProject.name}}</h4>
+
+                <carousel class="p-3">
+            <div *ngFor="let picture of featuredProject.pictures">
+                <slide><img src="{{picture}}" alt="slide" class="carousel-image"></slide>
+            </div>
+        </carousel>
+
+        <p class="mt-2">{{featuredProject.summary}}</p>
+        <p>Visit the Portfolio section to learn more!</p>
+        </div>
+
+        
+    </div>
+</div>
