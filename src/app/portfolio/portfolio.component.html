@@ -62,6 +62,15 @@
                                     <input 
                                     type="checkbox" 
                                     class="form-check-input position-static me-2"
+                                    [(ngModel)]="dart"
+                                    (change)="Filter()"
+                                    name="Dart">
+                                    <label for="form-check-label small">Dart</label>
+                                </div>
+                                <div class="form-check">
+                                    <input 
+                                    type="checkbox" 
+                                    class="form-check-input position-static me-2"
                                     [(ngModel)]="mysql"
                                     (change)="Filter()"
                                     name="MySQL">
