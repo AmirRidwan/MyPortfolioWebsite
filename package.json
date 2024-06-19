@@ -1,5 +1,5 @@
 {
-  "homeopage":"https://amirridwan.github.io/MyPortfolioWebsite",
+  "homeopage": "https://amirridwan.github.io/MyPortfolioWebsite",
   "name": "my-portfolio-website",
   "version": "0.0.0",
   "scripts": {
@@ -19,7 +19,9 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
-    "bootstrap": "^5.2.3",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
     "ngx-bootstrap": "^11.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
